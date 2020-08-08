@@ -1,0 +1,36 @@
+
+.row{
+    display: flex;
+    justify-content: space-between;
+
+}
+main{
+    justify-content: start;
+    text-align:left;
+    max-width:40vw;
+}
+main img{
+    max-height: 23rem;
+    border-radius: 1.5rem;
+    width: 100%;
+}
+/* .img{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.57);
+
+} */
+aside{
+    text-align:right;
+    max-width:40vw;
+    /* justify-content: end; */
+    font-family: Metropolis-Light;
+}
+.label{
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #ccc;
+}

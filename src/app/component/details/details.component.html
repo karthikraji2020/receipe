@@ -1,0 +1,30 @@
+
+
+<span class="goback">
+<img src="assets/Icons/Icon awesome-star.png" alt="Go Back" /> Go Back
+<!-- <img src="assets/Icons/Icon awesome-star.png" alt="Go Back" /> Go Back -->
+</span>
+
+<div class="row" >
+    <main>
+        <div class="img">
+            <img [src]="receipe.image" alt="">
+        </div>
+    </main>
+    <aside>
+        <div class="label">receipe</div>
+        <h2 *ngIf="receipe">{{receipe.name}}</h2>
+        <div class="rating">
+            <img src="assets/Icons/Icon awesome-star.png" alt="rating Star" /> 
+            <img src="assets/Icons/Icon awesome-star.png" alt="rating Star" /> 
+            <img src="assets/Icons/Icon awesome-star.png" alt="rating Star" /> 
+            <img src="assets/Icons/Icon awesome-star.png" alt="rating Star" /> 
+            <img src="assets/Icons/Icon awesome-star.png" alt="rating Star" /> 
+        </div>
+
+        <div class="label">description</div>
+        <h6 >{{receipe.description}}</h6>
+
+    </aside>
+
+</div>

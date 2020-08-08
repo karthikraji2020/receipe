@@ -1,0 +1,35 @@
+<span class="search-icon"> <img src="assets/Icons/Icon feather-search.png" alt="search" ></span> <input type="search" name="search" id="search"  placeholder="Search Your Favourite receipe" (keyup)="keyUpSearch($event.target.value)" >
+
+<div class="label">category</div>
+<h1 class="category-title">appetizer & Mains</h1>
+<div class="card-wrapper">
+    <div class="card" *ngFor="let receipe of receipes" (click)="navigateToDetail(receipe)" >
+        <!-- <a [routerLink]="/Home/receipe.id"> -->
+       
+        <div class="image-container" >
+        <img [src]="receipe.image" [alt]="receipe.name">
+        </div>
+        <div id="white" class="card-body">
+            <div class="category">
+                {{receipe.category}}
+            </div>
+                <div class="row">
+                    <div class="receipe-name">
+                        {{receipe.name}}
+                    </div>
+                    <div class="receipe-price">
+                        {{receipe.price}}
+                    </div>
+                    <div class="receipe-heart">
+                        {{receipe.name}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="receipe-description">
+                        {{receipe.description}}
+                    </div>
+                </div>
+        </div>
+    <!-- </a> -->
+    </div>
+</div>
