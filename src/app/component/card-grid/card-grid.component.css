@@ -2,6 +2,8 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* position: relative; */
+
 }
 .card{
     position: relative;
@@ -12,6 +14,10 @@
     border-radius: 1.5rem;
     cursor: pointer;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.15),0px 4px 8px rgba(0,0,0,0.25);
+}
+.card:hover{
+    background-color: rgba(0,0,0,0.45);
+    text-align: center;
 }
 .image-container{
     max-width: 15rem;
